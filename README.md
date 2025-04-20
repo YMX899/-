@@ -1,4 +1,4 @@
-# paper-hub:rocket:
+# paper-hub :rocket:
 ===========                                          
 Paper List of the Intelligent Agent Learning Group
 
@@ -9,7 +9,7 @@ Paper List of the Intelligent Agent Learning Group
 - `tools/build_summary.py`：汇总生成工具
 ### 使用方法
 1. 大家在 `papers/yourname.md` 中按模板填写论文清单  
-2. 运行 `python3 tools/build_summary.py` 生成最新的 `paper_list.md`(此功能暂时先跳过)
+2. 运行 `python3 tools/build_summary.py` 生成最新的 `paper_list.md`(此功能还在测试中...)
 3. 提交 PR，Review 后合并
 
 :bulb: **Tip**  yourname.md的书写方法和格式在 
