@@ -1,5 +1,5 @@
 # paper-hub :rocket:
-===========                                          
+                                       
 Paper List of the Intelligent Agent Learning Group
 
 ### 介绍
