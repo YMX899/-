@@ -3,7 +3,7 @@
 Paper List of the Intelligent Agent Learning Group
 
 ### 介绍
-本仓库用于汇总小组成员的阅读笔记和团队总表。
+本仓库用于汇总小组成员的阅读笔记，以下是详细介绍。
 - `papers/`：这个文件夹存放着每人单独的 Markdown 笔记，大家只需要编辑属于自己名字的笔记即可。
 - `paper_list.md`：为了方便阅读和检索而设置此汇总后的团队总表，平时可以直接阅读此汇总表。此由脚本自动生成。大家需要在完成自己markdown记录后，运行`tools/build.bat`脚本，这个脚本将会更新`paper_list.md`，将所有人的paper list合并到`paper_list.md`。
 - `tools/build.py`：存放汇总生成的脚本

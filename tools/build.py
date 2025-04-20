@@ -19,7 +19,7 @@ def build_summary():
     now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     
     # 顶部信息
-    out.append('# 团队paper list汇总 Paper list :\n\n')
+    out.append('# 小组paper list汇总\n\n')
     out.append('Paper List of the Intelligent Agent Learning Group\n')
     out.append(f'*由 `tools/build_summary.py` 自动生成，请勿手动编辑。*\n')
     out.append(f'*更新时间：{now}*\n\n')
