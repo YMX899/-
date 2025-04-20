@@ -1,34 +1,11 @@
 @echo off
-echo ===== Pulling latest changes =====
-git pull origin main
+echo ===== ÕıÔÚÔËĞĞ Python ½Å±¾Éú³ÉÂÛÎÄÁĞ±í =====
+python build.py
 if %errorlevel% neq 0 (
-    echo âŒ Git pull failed. Please check your network connection or remote repository.
+    echo ? Python ½Å±¾Ö´ĞĞÊ§°Ü¡£Çë¼ì²é tools\build.py ÊÇ·ñÓĞÓï·¨´íÎó»òÈ±Ê§ÎÄ¼ş¡£
     pause
     exit /b %errorlevel%
 )
+echo ? Python ½Å±¾Ö´ĞĞ³É¹¦,ÒÑÍê³ÉºÏ²¢£¡
 
-echo ===== Running Python script to build paper list =====
-python tools\build.py
-if %errorlevel% neq 0 (
-    echo âŒ Python script failed. Please check tools\build.py for syntax errors or missing files.
-    pause
-    exit /b %errorlevel%
-)
-
-echo ===== Committing changes =====
-git add ..\paper_list.md
-git commit -m "Weekly auto-update of paper list"
-if %errorlevel% neq 0 (
-    echo âš ï¸ Git commit may have failed (e.g., no changes to commit). Please check manually.
-)
-
-echo ===== Pushing to remote =====
-git push origin main
-if %errorlevel% neq 0 (
-    echo âŒ Git push failed. Check your permissions or network status.
-    pause
-    exit /b %errorlevel%
-)
-
-echo âœ… All tasks completed successfully!
 pause
